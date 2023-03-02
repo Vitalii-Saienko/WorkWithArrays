@@ -1,21 +1,17 @@
-/*
-1. create array
-2. initialize it using loop
-3. calculate the sum of elements of array
- */
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-        int [] vetal = new int[10];
-        for (int i = 0; i < vetal.length; i++) {
-            vetal[i] = i*2;
-            System.out.print(" "+vetal[i]);
-        }
-        System.out.println();
-        int sum = 0;
-        for (int i = 0; i < vetal.length; i++) {
-            sum = sum + vetal[i];
-        }
-        System.out.println(sum);
+        String text="Текстовая строка";
+        double x=100.0/7.0;
+        double z=130;
+        int n=-1234567;
+        int k=7654321;
+        int m=0xABC;
+        int l=0123;
+        Date now = new Date();
+        System.out.printf("%s\t%d\t%f\n",text,k,z);
+        System.out.printf("Десятичные числа:\t%1$g\t%2$e\t%1$07.2f\n",x,z);
+        System.out.printf("Десятичные числа:\t%g\t%e\t%1$07.2f\n",x,z);
     }
 }
-//https://stepik.org/lesson/469577/step/9?unit=460403
